@@ -1,0 +1,8 @@
+html
+	body
+		h1 Shopping List
+		each store in groceries
+			h3= store.storeName
+			ul
+				each val in store.list
+					li= val
